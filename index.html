@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Pizza</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Roboto:300&display=swap&subset=cyrillic" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header-page.css">
+    <link rel="stylesheet" href="css/section-top.css">
+    <link rel="stylesheet" href="css/section-about.css">
+    <link rel="stylesheet" href="css/section-contacts.css">
+    <link rel="stylesheet" href="css/footer-page.css">
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+    
+    <!--header-page start-->
+    <header class="header-page">
+        <div class="container header-page__container">
+            
+            <div class="header-page__start">
+                <div class="logo">
+                    <img class="logo__img" src="img/common/Logo.png" alt="logo" width="127px" height="21px">
+                </div>
+            </div>
+
+            <div class="header-page__end">
+                <nav class="header-page__nav">
+                    <ul class="header-page__ul">
+
+                        <li class="header-page__li">
+                            <a class="header-page__link" href="#" data-scroll-to="section-catalog">
+                                <span class="header-page__text">пицца</span>
+                            </a>
+                        </li>
+
+                        <li class="header-page__li">
+                            <a class="header-page__link" href="#" data-scroll-to="section-about">
+                                <span class="header-page__text">о нас</span>
+                            </a>
+                        </li>
+
+                        <li class="header-page__li">
+                            <a class="header-page__link" href="#" data-scroll-to="section-contacts">
+                                <span class="header-page__text">контакты</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="phone">
+                    <a class="phone__item header-page__phone" href="tel:+79117112123">+7-911-711-21-23</a>
+                </div>
+
+                <div class="header-page__hamburger">
+                    <button class="btn-menu" type="button" data-popup="popup-menu">
+                        <span class="button-menu__box">
+                            <span class="button-menu__inner"></span>
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!--header-page end-->
+
+
+    <!-- section-top start-->
+    <section class="section-top">
+        <div class="container section-top__container">
+            <p class="section-top__info">от итальянского повара</p>
+            <h1 class="section-top__title">Лучшая пицца в Сочах</h1>
+
+            <div class="section-top__btn">
+                <button class="btn" type="button" data-scroll-to='section-catalog'>Выбрать</button>
+            </div>
+        </div>
+    </section>
+    <!-- section-top end-->
+
+
+    <!--section-catalog start-->
+    <section class="section section-catalog">
+        <div class="container">
+            <header class="section__header">
+                
+                <h2 class="page-title page-title--accent">Меню</h2>
+                
+                <nav class="catalog-nav">
+                    <ul class="catalog-nav__wrapper">
+                        
+                        <li class="catalog-nav__item">
+                            <button class="catalog-nav__btn is-active" type="button" data-filter="all">все</button>
+                        </li>
+
+                        <li class="catalog-nav__item">
+                            <button class="catalog-nav__btn" type="button" data-filter="mushrooms">грибные</button>
+                        </li>
+
+                        <li class="catalog-nav__item">
+                            <button class="catalog-nav__btn" type="button" data-filter="meat">мясные</button>
+                        </li>
+
+                        <li class="catalog-nav__item">
+                            <button class="catalog-nav__btn" type="button" data-filter="cheese">сырные</button>
+                        </li>
+
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="catalog">
+                <div class="catalog__item" data-category="mushrooms">
+                    <div class="product catalog__product">
+                        <img src="img/section-catalog/1.png.png" alt="" class="product__img">
+                        <div class="product__content">
+                            <h3 class="product_title">Салями</h3>
+                            <p class="product__description">Салями, каротфель и морковь, огурцы маринованные, мацарелла, цыпленок, ветчина и французский соус</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                            <button class="product__size is-active" type="button">35см</button>
+                            <button class="product__size" type="button">30см</button>
+                            <button class="product__size" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value">850</span>
+                                <span class="product__price-currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
+                        </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="catalog__item" data-category="meat">
+                    <div class="product catalog__product">
+                        <img src="img/section-catalog/2.png" alt="" class="product__img">
+                        <div class="product__content">
+                            <h3 class="product_title">Мясная</h3>
+                            <p class="product__description">Салями, каротфель и морковь, огурцы маринованные, мацарелла, цыпленок, ветчина и французский соус</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                            <button class="product__size is-active" type="button">35см</button>
+                            <button class="product__size" type="button">30см</button>
+                            <button class="product__size" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value">850</span>
+                                <span class="product__price-currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
+                        </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="catalog__item" data-category="cheese">
+                    <div class="product catalog__product">
+                        <img src="img/section-catalog/3.png" alt="" class="product__img">
+                        <div class="product__content">
+                            <h3 class="product_title">Хит</h3>
+                            <p class="product__description">Картофель и морковь, огурцы
+                            маринованные, моцарелла, цыпленок,
+                            ветчина и французский соус </p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                            <button class="product__size is-active" type="button">35см</button>
+                            <button class="product__size" type="button">30см</button>
+                            <button class="product__size" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value">850</span>
+                                <span class="product__price-currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
+                        </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="catalog__item" data-category="mushrooms">
+                    <div class="product catalog__product">
+                        <img src="img/section-catalog/4.png" alt="" class="product__img">
+                        <div class="product__content">
+                            <h3 class="product_title">Ветчина-грибы</h3>
+                            <p class="product__description">Салями, каротфель и морковь, огурцы маринованные, мацарелла, цыпленок, ветчина и французский соус</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                            <button class="product__size is-active" type="button">35см</button>
+                            <button class="product__size" type="button">30см</button>
+                            <button class="product__size" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value">850</span>
+                                <span class="product__price-currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
+                        </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="catalog__item" data-category="cheese">
+                    <div class="product catalog__product">
+                        <img src="img/section-catalog/5.png" alt="" class="product__img">
+                        <div class="product__content">
+                            <h3 class="product_title">Карбонара</h3>
+                            <p class="product__description">Салями, каротфель и морковь, мацарелла, цыпленок, ветчина и французский соус</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                            <button class="product__size is-active" type="button">35см</button>
+                            <button class="product__size" type="button">30см</button>
+                            <button class="product__size" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value">850</span>
+                                <span class="product__price-currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
+                        </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="catalog__item" data-category="meat">
+                    <div class="product catalog__product">
+                        <img src="img/section-catalog/6.png" alt="" class="product__img">
+                        <div class="product__content">
+                            <h3 class="product_title">Фирменная</h3>
+                            <p class="product__description">Салями, огурцы маринованные, мацарелла, цыпленок, ветчина и французский соус</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                            <button class="product__size is-active" type="button">35см</button>
+                            <button class="product__size" type="button">30см</button>
+                            <button class="product__size" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value">850</span>
+                                <span class="product__price-currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
+                        </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="catalog__item" data-category="cheese">
+                    <div class="product catalog__product">
+                        <img src="img/section-catalog/7.png" alt="" class="product__img">
+                        <div class="product__content">
+                            <h3 class="product_title">Ассорти</h3>
+                            <p class="product__description">Салями, каротфель и морковь, огурцы маринованные, мацарелла, цыпленок, ветчина</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                            <button class="product__size is-active" type="button">35см</button>
+                            <button class="product__size" type="button">30см</button>
+                            <button class="product__size" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value">800</span>
+                                <span class="product__price-currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
+                        </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="catalog__item" data-category="mushrooms">
+                    <div class="product catalog__product">
+                        <img src="img/section-catalog/8.png" alt="" class="product__img">
+                        <div class="product__content">
+                            <h3 class="product_title">L-01</h3>
+                            <p class="product__description">Салями, каротфель и морковь, огурцы маринованные, цыпленок, ветчина и французский соус</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                            <button class="product__size is-active" type="button">35см</button>
+                            <button class="product__size" type="button">30см</button>
+                            <button class="product__size" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value">850</span>
+                                <span class="product__price-currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
+                        </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="catalog__item" data-category="meat">
+                    <div class="product catalog__product">
+                        <img src="img/section-catalog/9.png" alt="" class="product__img">
+                        <div class="product__content">
+                            <h3 class="product_title">Три сыра</h3>
+                            <p class="product__description">Салями, каротфель и морковь, огурцы маринованные, мацарелла, цыпленок, ветчина и французский соус</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__sizes">
+                            <button class="product__size is-active" type="button">35см</button>
+                            <button class="product__size" type="button">30см</button>
+                            <button class="product__size" type="button">25см</button>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price">
+                                <span class="product__price-value">850</span>
+                                <span class="product__price-currency">&#8381;</span>
+                            </div>
+                            <button class="btn product__btn" type="button" data-popup="popup-order">заказать</button>
+                        </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section-catalog end-->
+
+
+    <!--section-about start-->
+    <section class="section section-about" id="section-about">
+        <img src="img/section-about/bg.jpg" alt="" class="section-about__img">
+        <div class="container section-about__container">
+            <div class="section-about__content">
+                <h2 class="page-title section-about__title">О нас</h2>
+                <p class="section-about__text">Доставим вам горячую пиццу за час или пицца бесплатно.<br>Мы готовим пиццу только из свежи продуктов, каждый день мы покупаем свежие овощи, грибы, мясо.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--section-about end-->
+
+
+    <!--section-contacts start-->
+    <section class=" section section-contacts" id="section-contacts">
+        <div class="container section-contacts__container">
+            <header class="section-header">
+                <h2 class="page-title section-contacts__title">Контакты</h2>
+            </header>
+
+            <div class="contacts">
+                <div class="contacts__start">
+                    <div class="contacts__map" id="ymap"></div>
+                </div>
+
+                <div class="contacts__end">
+                    <div class="contacts__item">
+                        <h3 class="contacts__title">Адрес</h3>
+                        <p class="contacts__text">г. Москва, Преображенская площадь, 8</p>
+                    </div>
+
+                    <div class="contacts__item">
+                        <h3 class="contacts__title">Телефон</h3>
+                        <a class="contacts__phone" href="tel:+7(911)7112123">+7 (911) 711-21-23</a>
+                    </div>
+
+                    <div class="contacts__item">
+                        <h3 class="contacts__title">Социальные сети</h3>
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a href="" class="socials-link" target="blank">
+                                    <svg class="socials__icon socials__icon--vk" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+                                        <image id="vk" width="35" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAADkElEQVRYhb2YXWgUVxTHfzvJJqyJ2qiYqFiLYkSCihJ9EfqUgkIF3yySl0CgfiBo30QQCUQfRBNQEl+kCGHVUHwQLD5ZWzQogdY2RmTFjyQW05IaE8VN2CQr1zm7OzNnZtyY3f6eZu6595x/7px77tlE0vHdfAY1wFagFlgCxIAkMAIkgF5geLZuS9VIMMuAJmAvUBc4K0c/EAd+BF4pqw+WHlKYv7wDGABa8xSCzGuVdR3iJ5RPidkj274fiCprfkRlfUL8BRIkJgK0AVeAKmX9PKrEX5v4V/iJMRO7gMPKUhiM3y4/QX5izkqSFpO9EidUzJ4i7oiXw94ccoox2d6plhSXTucpc4ppKWCy5kuVxHWJMQWt+X8WkqFZ4mfFNM2hjsyVqMTPXgf69CxcCaUxKCkD0vD6KUxN2LaaTbB2J5RVQkkUpiZh+AE8uub2UbEUyipy7+k0jA/BzLQ3mol/slQuPXeJj8ZgZztEHCk1/Cf8csJ+nnwLldXwxVc5e/UGeHwdZqbs98oa+PY8RErcYW+3wKs/vGJM/BpLbl83qSQM9rjHzG5UrbafR5/Bk5tqWVaIYf1uLSQ5Cv8+VMuErZa0AZr+bvvzONnUmHuZeKOWZDG7trpBDfP7RZhOqWGh1gq8TceGYPCue2zZZlhRr6YqtjSD5dmVF79qf26WWNIY+dN3BdKeZKvfB+ULIOZTkqworGnQgsdfQu8FNd1DrFQ6NH/G/4bEz7BuV848bzF8c8qd3Bm+PgrVG91jMym4czp3EoNJWtIqBmN2J/mf2zx/uX1avJjP6P08IwkYG1RTfRixpOkJJvUe7p0LNH+SpXWwdkc+MxOWNM/hmBrT/1PolFDqv89HUK8lXXy/Mnn5Kw7PbqlhFw8uQU+bX4W1BX25XQ0LJv5wJgvjyqxIw/3z0HdZn7AMz2/DwG9wr12ZPrLtoP8plPgZMebnRGA1ypGGh91w4xAkbtinLS2F8d0/MDFmPw/cgZ4zdsV1EolAbJHXaUri4/wR1yFdfGEpKYfpSTXswDRYB/A0V8fNraOmzpVwIaMSF6+YkaLsTDj7nXXOW0avAgHZV3DaJV4Wn5rOD/mdrjkRlzgu/MSY49FYxB0yfht1f+IvJiPoCPBdAZN6VPwd8RMSJibDVWm+OvOrQ76kZH2tN0dmK8Zgst3UgVXAsbyuDhszz8w368z68O7AU/RmQ+H/cwV8ACfs46bVNhu2AAAAAElFTkSuQmCC"/>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="socials__item">
+                                <a href="" class="socials-link">
+                                    <svg class="socials__icon socials__icon--fb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+                                        <image id="facebook" width="35" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAACmklEQVRYhc2Yv2sTYRjHP3dcW2PxB5W6FEEQg4OLFEU6WKFFIoIkOAjZOznVLWAhi2YR+gd0z1aSwaEIHVIwg1BcnLrooqARxWqtTe2dvM2T5C7vnXcX8+sDB7l7n/d9vrn3x/M8ZxATp5geB+aAWSAJTAPqWR2oATvANlA1suV6nNEji3GK6VvAEpABJjUDnT2gBKwZ2fKW1upDqBinmL4GrALzWmN0KsCykS2/+VePQDFOMW0BeSAHmJpBfGygoMY0suU/fr19xTjF9BlgHVjQGv+fTeCBkS1/DxUjQl4CN/ogpMlr4E6nII8YmZqNrt6IaYE10b4//A3OkWbmQr2hlHvKrA6DfCwhE6fg6kO4cBMS5zpcrcDnt1oXFwvi70nr/zR/yK7JaV2CGDsJiwVI3tOFRCcnfr1iZPtG3zVX7sPpGe1xTEzx2xYjB1q8c2TmuvaIg13YqzUuO/LhOy/+W2tmSTMJY/K81+DnJ3jxKGzRBqH8b5kSazIBRsEYHTP660u3QhQZpcOUoBcl1vQT5X/OkugbjcQU3F5pmFoJb5epS3B3tX3/6jnsfoijf9aSNCAa6mA7e9Hf1DrhbTvc10xCSJqSj/SeAy30hDFtSmLUW9QWt2Mv5nFLMrRo7H+FjccN08Vnjalp8uNjY50obN8MIYy6JaliNJSTb+8apo7t7XJUb7d1R82UnHUU2DEleR4FtpWYqiTPw0T5r5pSTpSGLKakdDQDzJrWPFiO/R+LkbqmMiQhlWZd5Q69y1JODBJb/OIRIwVWQTPvLwV3YdeZZuYlax8Em+KvRfd10+UUmGPtexUY30cqqYlUN3UIGnhF6VsNiGEKeNrDRW3LeCk/IQS9GTcj8RXCR9Twv8/4iOrPlyvgL+8WzOcRKbT/AAAAAElFTkSuQmCC"/>
+                                    </svg>
+                                </a>
+                            </li>
+
+                            <li class="socials__item">
+                                <a href="" class="socials-link">
+                                    <svg class="socials__icon socials__icon--inst" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+                                    <image id="instagram" width="35" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAADrklEQVRYhc2YTWhVRxTHf/f53GgtEbE2kGKNNlgkSBssgoVooWBQcFal3EWhBSFYxU2FLKSbdlHadFHUIoguXAzdFG+hguIiCn6AYosf3YQ0KorpF00qokLbjBxzXnIzc+e9d6MP/G8G5nzM/86cOefMTSgJZ00PsAlYB3QBi4E2YAIYB4aBS8BQkmaXy3hvioyz5gVgB7AdWBUoxDECHAK+TdLsflSrGTLOmnlAP/C5fv1cIbu2FziYpNn/MR9RMs6aDuA7YEMgnDvOAe8naXanyEMhGWfNG8AJ4KVA+PT4A9icpNnPDckokdPAiy0gUsM9YKNPaBYZPRq5Aa3YER+yQz35I5smo8F6JhIjYvgNcAr4M5DGsRR4F9gdOXKJod5aUFdzgv4IkbPAtiTN/g4kjXFTco6z5iDwA/C2Z7FB1z0wvTOaR24XXN8xYE2SZuPOmleBj4GVQKUJIpPAr7JQkmY3nTWSHH8B2j09ufavSB6q7cyOAiKCQSXSCVwElgQacfwOvAl86Kx5K0mzUWfNIPC1Z9Gm639Z+8LtEZcndfykJJF/gNVaLv5S+7w/H0/Wr2qtiaX4MR1fCyTwH3AU+FH1ZPu3Ah8EmjP2Y4FkCquER1WLXgyTOj/fk8t13JKk2VVv/pizRm7dcS2YjyQegN9UPkkcm6pafcvgX6AvSbPrzpoFwEd6HLL4ESHorOkDfir4iHpYV1FHZXBYiSwEzgP7gF06npd5kYteSb9dFe1HyuCY6kp+WOvZrdV5cnrNYnElcqXr4a7KuiM6tfm7gaQ+2iqadMpgmeoOR2xq88sCSX1MVLRVLIM+1ZUUP+rZjeo8Ob1mMV6p84Ux9DtrVmitWg98Bnyv3eB6mRd5LnaaxXBVm+f3ShjJLTou1zdJs1vAp3mhs2a55pmFgWV9XBIyQ3VVpuD3ra8D15w1B7QaS1J7Waq7FtNFDeyLMFTR58RIgZBcEPqxgS44AFwAbug4UEAkbx8L6hHhUSuUhwLxFN7RUVL8w0DaHB6qPTl/Pp6s36ifkS/qTtLsgbNGEtoeoCNwFYfUsK+SNLuipeMa0OlpT/cz+bZTznp/gVuJiVQIBZImoUSsxpSPnUmazXR6NO6B5fp/oT3wWL2HmOevXXvggUgNnNUDP1evg1m9rAo267umlbinD7lZL8ugsdaH1UZl3qodCR5whWRyhHr0TJ8lzunRBESiZJSQbGGvRPscKruPCfXTG3v0U/TWLsJz8X8mQqw1f66Ax9wdM03+sDW6AAAAAElFTkSuQmCC"/>
+                                </svg></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section-contacts end-->
+
+
+    <!--footer-page start-->
+    <footer class="footer-page">
+        <div class="container">
+            <div class="footer-page__text">PizzaTime 2020</div>
+        </div>
+    </footer>
+    <!--footer-page end-->
+
+
+    <!--popup-menu start-->
+    <div class="popup popup-menu">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="popup__content popup__content--fluid popup__content--centered">
+                    <button class="btn-close popup-btn__close popup-close"></button>
+
+                    <nav class="mobile-menu popup__mobile-menu">
+                        <ul class="mobile-menu__ul">
+    
+                            <li class="mobile-menu__li">
+                                <a class="mobile-menu__link popup-close" href="#" data-scroll-to="section-catalog">Пицца</a>
+                            </li>
+    
+                            <li class="mobile-menu__li">
+                                <a class="mobile-menu__link popup-close" href="#" data-scroll-to="section-about">О нас</a>
+                            </li>
+    
+                            <li class="mobile-menu__li">
+                                <a class="mobile-menu__link popup-close" href="#" data-scroll-to="section-contacts">Контакты</a>
+                            </li>
+    
+                        </ul>
+                    </nav>
+
+                    <div class="phone popup__phone">
+                        <a class="phone__item phone__item--accent" href="tel:+79117112123">+7-911-711-21-23</a>
+                    </div>
+
+                    <ul class="socials">
+                        <li class="socials__item">
+                            <a href="" class="socials-link" target="blank">
+                                <svg class="socials__icon socials__icon--vk" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+                                    <image id="vk" width="35" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAADkElEQVRYhb2YXWgUVxTHfzvJJqyJ2qiYqFiLYkSCihJ9EfqUgkIF3yySl0CgfiBo30QQCUQfRBNQEl+kCGHVUHwQLD5ZWzQogdY2RmTFjyQW05IaE8VN2CQr1zm7OzNnZtyY3f6eZu6595x/7px77tlE0vHdfAY1wFagFlgCxIAkMAIkgF5geLZuS9VIMMuAJmAvUBc4K0c/EAd+BF4pqw+WHlKYv7wDGABa8xSCzGuVdR3iJ5RPidkj274fiCprfkRlfUL8BRIkJgK0AVeAKmX9PKrEX5v4V/iJMRO7gMPKUhiM3y4/QX5izkqSFpO9EidUzJ4i7oiXw94ccoox2d6plhSXTucpc4ppKWCy5kuVxHWJMQWt+X8WkqFZ4mfFNM2hjsyVqMTPXgf69CxcCaUxKCkD0vD6KUxN2LaaTbB2J5RVQkkUpiZh+AE8uub2UbEUyipy7+k0jA/BzLQ3mol/slQuPXeJj8ZgZztEHCk1/Cf8csJ+nnwLldXwxVc5e/UGeHwdZqbs98oa+PY8RErcYW+3wKs/vGJM/BpLbl83qSQM9rjHzG5UrbafR5/Bk5tqWVaIYf1uLSQ5Cv8+VMuErZa0AZr+bvvzONnUmHuZeKOWZDG7trpBDfP7RZhOqWGh1gq8TceGYPCue2zZZlhRr6YqtjSD5dmVF79qf26WWNIY+dN3BdKeZKvfB+ULIOZTkqworGnQgsdfQu8FNd1DrFQ6NH/G/4bEz7BuV848bzF8c8qd3Bm+PgrVG91jMym4czp3EoNJWtIqBmN2J/mf2zx/uX1avJjP6P08IwkYG1RTfRixpOkJJvUe7p0LNH+SpXWwdkc+MxOWNM/hmBrT/1PolFDqv89HUK8lXXy/Mnn5Kw7PbqlhFw8uQU+bX4W1BX25XQ0LJv5wJgvjyqxIw/3z0HdZn7AMz2/DwG9wr12ZPrLtoP8plPgZMebnRGA1ypGGh91w4xAkbtinLS2F8d0/MDFmPw/cgZ4zdsV1EolAbJHXaUri4/wR1yFdfGEpKYfpSTXswDRYB/A0V8fNraOmzpVwIaMSF6+YkaLsTDj7nXXOW0avAgHZV3DaJV4Wn5rOD/mdrjkRlzgu/MSY49FYxB0yfht1f+IvJiPoCPBdAZN6VPwd8RMSJibDVWm+OvOrQ76kZH2tN0dmK8Zgst3UgVXAsbyuDhszz8w368z68O7AU/RmQ+H/cwV8ACfs46bVNhu2AAAAAElFTkSuQmCC"/>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="socials__item">
+                            <a href="" class="socials-link">
+                                <svg class="socials__icon socials__icon--fb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+                                    <image id="facebook" width="35" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAACmklEQVRYhc2Yv2sTYRjHP3dcW2PxB5W6FEEQg4OLFEU6WKFFIoIkOAjZOznVLWAhi2YR+gd0z1aSwaEIHVIwg1BcnLrooqARxWqtTe2dvM2T5C7vnXcX8+sDB7l7n/d9vrn3x/M8ZxATp5geB+aAWSAJTAPqWR2oATvANlA1suV6nNEji3GK6VvAEpABJjUDnT2gBKwZ2fKW1upDqBinmL4GrALzWmN0KsCykS2/+VePQDFOMW0BeSAHmJpBfGygoMY0suU/fr19xTjF9BlgHVjQGv+fTeCBkS1/DxUjQl4CN/ogpMlr4E6nII8YmZqNrt6IaYE10b4//A3OkWbmQr2hlHvKrA6DfCwhE6fg6kO4cBMS5zpcrcDnt1oXFwvi70nr/zR/yK7JaV2CGDsJiwVI3tOFRCcnfr1iZPtG3zVX7sPpGe1xTEzx2xYjB1q8c2TmuvaIg13YqzUuO/LhOy/+W2tmSTMJY/K81+DnJ3jxKGzRBqH8b5kSazIBRsEYHTP660u3QhQZpcOUoBcl1vQT5X/OkugbjcQU3F5pmFoJb5epS3B3tX3/6jnsfoijf9aSNCAa6mA7e9Hf1DrhbTvc10xCSJqSj/SeAy30hDFtSmLUW9QWt2Mv5nFLMrRo7H+FjccN08Vnjalp8uNjY50obN8MIYy6JaliNJSTb+8apo7t7XJUb7d1R82UnHUU2DEleR4FtpWYqiTPw0T5r5pSTpSGLKakdDQDzJrWPFiO/R+LkbqmMiQhlWZd5Q69y1JODBJb/OIRIwVWQTPvLwV3YdeZZuYlax8Em+KvRfd10+UUmGPtexUY30cqqYlUN3UIGnhF6VsNiGEKeNrDRW3LeCk/IQS9GTcj8RXCR9Twv8/4iOrPlyvgL+8WzOcRKbT/AAAAAElFTkSuQmCC"/>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="socials__item">
+                            <a href="" class="socials-link">
+                                <svg class="socials__icon socials__icon--inst" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+                                <image id="instagram" width="35" height="35" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAADrklEQVRYhc2YTWhVRxTHf/f53GgtEbE2kGKNNlgkSBssgoVooWBQcFal3EWhBSFYxU2FLKSbdlHadFHUIoguXAzdFG+hguIiCn6AYosf3YQ0KorpF00qokLbjBxzXnIzc+e9d6MP/G8G5nzM/86cOefMTSgJZ00PsAlYB3QBi4E2YAIYB4aBS8BQkmaXy3hvioyz5gVgB7AdWBUoxDECHAK+TdLsflSrGTLOmnlAP/C5fv1cIbu2FziYpNn/MR9RMs6aDuA7YEMgnDvOAe8naXanyEMhGWfNG8AJ4KVA+PT4A9icpNnPDckokdPAiy0gUsM9YKNPaBYZPRq5Aa3YER+yQz35I5smo8F6JhIjYvgNcAr4M5DGsRR4F9gdOXKJod5aUFdzgv4IkbPAtiTN/g4kjXFTco6z5iDwA/C2Z7FB1z0wvTOaR24XXN8xYE2SZuPOmleBj4GVQKUJIpPAr7JQkmY3nTWSHH8B2j09ufavSB6q7cyOAiKCQSXSCVwElgQacfwOvAl86Kx5K0mzUWfNIPC1Z9Gm639Z+8LtEZcndfykJJF/gNVaLv5S+7w/H0/Wr2qtiaX4MR1fCyTwH3AU+FH1ZPu3Ah8EmjP2Y4FkCquER1WLXgyTOj/fk8t13JKk2VVv/pizRm7dcS2YjyQegN9UPkkcm6pafcvgX6AvSbPrzpoFwEd6HLL4ESHorOkDfir4iHpYV1FHZXBYiSwEzgP7gF06npd5kYteSb9dFe1HyuCY6kp+WOvZrdV5cnrNYnElcqXr4a7KuiM6tfm7gaQ+2iqadMpgmeoOR2xq88sCSX1MVLRVLIM+1ZUUP+rZjeo8Ob1mMV6p84Ux9DtrVmitWg98Bnyv3eB6mRd5LnaaxXBVm+f3ShjJLTou1zdJs1vAp3mhs2a55pmFgWV9XBIyQ3VVpuD3ra8D15w1B7QaS1J7Waq7FtNFDeyLMFTR58RIgZBcEPqxgS44AFwAbug4UEAkbx8L6hHhUSuUhwLxFN7RUVL8w0DaHB6qPTl/Pp6s36ifkS/qTtLsgbNGEtoeoCNwFYfUsK+SNLuipeMa0OlpT/cz+bZTznp/gVuJiVQIBZImoUSsxpSPnUmazXR6NO6B5fp/oT3wWL2HmOevXXvggUgNnNUDP1evg1m9rAo267umlbinD7lZL8ugsdaH1UZl3qodCR5whWRyhHr0TJ8lzunRBESiZJSQbGGvRPscKruPCfXTG3v0U/TWLsJz8X8mQqw1f66Ax9wdM03+sDW6AAAAAElFTkSuQmCC"/>
+                            </svg></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--popup-menu end-->
+
+
+    <!--popup-order start-->
+    <div class="popup popup-order">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="popup__content">
+                    <button class="btn-close popup-btn__close popup-close"></button>
+                    <h2 class="page-title popup__title">Заполните форму</h2>
+                    <p class="popup__subtitle popup__subtitle--order">Мы привезем вам горячую пиццу за 50 минут</p>
+                    <div class="order">
+                        <img class="order__img" src="img/section-catalog/1.png.png" alt="">
+                        <h3 class="order__title">
+                            <span class="order-product-title">Салями</span>
+                            <span class="order-product-price">850</span>&#8381;
+                        </h3>
+                        <p class="order__size">35 см</p>
+                        <form class="form">
+                            <input class="order-info-title" type="hidden" name="пицца">
+                            <input class="order-info-price" type="hidden" name="цена">
+                            <input class="order-info-size" type="hidden" name="размер">
+                            <input class="form__input" type="text" name="имя" placeholder="Имя" required>
+                            <input class="form__input" type="text" name="телефон" placeholder="Телефон" required>
+                            <input class="form__input" type="text" name="адрес" placeholder="Адрес" required>
+                            <select class="form__input" name="оплата">
+                                <option value="Оплата наличными">Оплата наличными</option>
+                                <option value="Оплата картой">Оплата картой</option>
+                            </select>
+                            <button class="btn form__btn" type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--popup-order end-->
+
+
+    <!--popup-thanks start-->
+    <div class="popup popup-thanks">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="popup__content">
+                    <button class="btn-close popup-btfn__close popup-close"></button>
+                    <h2 class="page-title popup__title">Успешно отправлено</h2>
+                    <p class="popup__subtitle">Мы уже начали готовить вашу пиццу</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--popup-thanks end-->
+
+
+    <!--popup-error start-->
+    <div class="popup popup-thanks">
+        <div class="popup__wrapper">
+            <div class="popup__inner">
+                <div class="popup__content">
+                    <button class="btn-close popup-btn__close popup-close"></button>
+                    <h2 class="page-title popup__title">Произошла ошибка</h2>
+                    <p class="popup__subtitle">Пожалуйста, сделайте заказ по телефону <a class="popup__link" href="tel:+79117112123">+7-911-711-21-23</a></p>
+                </div>
+            </div>
+         </div>
+    </div>
+    <!--popup-error end-->
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=en_RU" type="text/javascript"></script>
+
+    <script src="js/myLib.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/scrollTo.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/map.js"></script>
+
+</body>
+</html>

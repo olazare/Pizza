@@ -1,0 +1,13 @@
+
+.footer-page {
+    background: linear-gradient(#1f1f1f, #2d2c2c);
+    padding: 25px 0;
+}
+
+.footer-page__text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: 900;
+    text-align: center;
+}
